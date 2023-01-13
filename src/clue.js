@@ -111,14 +111,14 @@ function selectRandom(array) {
  
 function pickMystery() {
 
-        let room = roomsArray[Math.floor(Math.random() * roomsArray.length)]
-        let weapon = weaponsArray[Math.floor(Math.random() * weaponsArray.length)]
-        let suspect = suspectsArray[Math.floor(Math.random()* suspectsArray.length)]
+        // let room = roomsArray[Math.floor(Math.random() * roomsArray.length)]
+        // let weapon = weaponsArray[Math.floor(Math.random() * weaponsArray.length)]
+        // let suspect = suspectsArray[Math.floor(Math.random()* suspectsArray.length)]
    
-        // let room = selectRandom(roomsArray)
-        // let weapon = selectRandom(weaponsArray)
-        // let suspect = selectRandom(suspectsArray)
-        //this funtion was written before with parameters (roomsArray, weaponsArray, suspectsArray), but was not passing the Jasmine test.
+        const room = selectRandom(roomsArray)
+        const weapon = selectRandom(weaponsArray)
+        const suspect = selectRandom(suspectsArray)
+        
 
         return { suspect, weapon, room }
  }
